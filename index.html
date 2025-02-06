@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+
   <div class="container-register-login">
     <div class="container-login">
       <h2>Lgin</h2>
@@ -58,37 +60,56 @@
     </div>
   </div>
 
-  <div class="container-service">
+  <div id="container-service" class="container-service">
     <div class="service-options">
       <img class="logo-service" src="images/Estacionamento (1).png" alt="">
       <div class="options-buttons">
         <button id="adicionar">Adicionar</button>
-        <button>Alterar</button>
+        <button id="alterar">Alterar</button>
         <button id="excluir">Excluir</button>
       </div>
     </div>
-    <div class="service-label-input">
-      <label for="Placa">Placa</label>
-      <input type="text">
-    </div>
-    <div class="service-cor-vaga">
-      <div class="service-label-input">
-        <label for="cor">Cor</label>
-        <input type="text">
+    <div class="container-dados">
+      <div class="container-dados-input">
+        <div id="placa" class="service-label-input">
+          <label id="placa-label" for="Placa">Placa</label>
+          <input id="placa-input" type="text">
+        </div>
+        <div id="inputCor-vaga" class="service-cor-vaga">
+          <div class="service-label-input">
+            <label for="cor">Cor</label>
+            <input type="text">
+          </div>
+          <div class="service-label-input">
+            <label for="Vaga">Vaga</label>
+            <input type="text">
+          </div>
+        </div>
+        <div id="modelo-carro" class="service-label-input">
+          <label for="modelo">Modelo</label>
+          <input type="text">
+        </div>
+        <div id="tipodeCarro" class="service-label-input">
+          <label for="Tipo de veiculo">Tipo de veiculo</label>
+          <input type="text">
+        </div>
+        <div id="service-price" class="service-price">
+          <p>Total: </p>
+          <p id="price">&nbsp;R$XX,XX</p>
+        </div>
+        <div  id="payment-input" class="service-label-input">
+          <label for="Forma de pag.">Forma de pag.</label>
+          <input type="text">
+        </div>
+        <div class="service-button">
+          <button id="actionButton">Adicionar</button>
+        </div>
       </div>
-      <div class="service-label-input">
-        <label for="Vaga">Vaga</label>
-        <input type="text">
-      </div>
-    </div>
-    <div class="service-label-input">
-      <label for="modelo">Modelo</label>
-      <input type="text">
-    </div>
-    <div class="service-label-input">
-      <label for="Tipo de veiculo">Tipo de veiculo</label>
-      <input type="text">
     </div>
   </div>
+
+
+  <script src="js/script.js"></script>
 </body>
+
 </html>
