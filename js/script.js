@@ -10,6 +10,29 @@ const tipodeCarro = document.getElementById('tipodeCarro');
 const modelodeCarro = document.getElementById('modelo-carro');
 const placa = document.getElementById('placa');
 const placaInput = document.getElementById('placa-input');
+const logoBtn = document.querySelector(".logo-button");
+const containerRl = document.querySelector(".container-register-login");
+const loginOption = document.getElementById('login-option'); 
+const registerOption = document.getElementById('register-option'); 
+const containerRegister = document.querySelector(".container-register");
+const containerLogin = document.querySelector(".container-login");
+
+logoBtn.addEventListener("click", () => {
+    logoBtn.style.left = '291.5px'
+    setTimeout(() => {
+        containerRl.classList.toggle("visible");
+    }, 300);
+});
+
+loginOption.addEventListener("click", () => {
+    containerRegister.style.display = 'none';
+    containerLogin.style.display = 'flex';
+});
+
+registerOption.addEventListener("click", () => {
+    containerRegister.style.display = 'flex';
+    containerLogin.style.display = 'none';
+});
 
 const buttons = [alterarBtn, excluirBtn, adicionarBtn];
 

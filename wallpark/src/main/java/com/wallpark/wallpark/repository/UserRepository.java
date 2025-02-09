@@ -5,9 +5,9 @@ import java.util.UUID;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.wallpark.wallpark.entities.Vehicles;
+import com.wallpark.wallpark.entities.User;
 
 @Repository
-public interface VehiclesRepository extends JpaRepository<Vehicles, UUID>{
+public interface UserRepository extends JpaRepository<User, UUID>{
 
 }

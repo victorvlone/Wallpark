@@ -1,0 +1,10 @@
+services:
+  mysql:
+    image: 'mysql:latest'
+    environment:
+      - 'MYSQL_DATABASE=wallparkdb'
+      - 'MYSQL_PASSWORD=vI6wk8(J>]7'
+      - 'MYSQL_ROOT_PASSWORD=%t/5@leY28@N'
+      - 'MYSQL_USER=victorvlone'
+    ports:
+      - '3306:3306'

@@ -14,30 +14,26 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
-@Table(name = "tb_vehicles")
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class Vehicles {
+@Table(name = "tb_user")
+public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
+    @GeneratedValue(strategy= GenerationType.UUID)
     private UUID id;
 
-    @Column(name = "placa")
-    private String placa;
+    @Column(name = "first_name")
+    private String firstName;
 
-    @Column(name = "modelo")
-    private String modelo;
-    
-    @Column(name = "cor")
-    private String cor;
+    @Column(name = "last_name")
+    private String lastName;
 
-    @Column(name = "vaga")
-    private String vaga;
+    @Column(name = "email")
+    private String email;
 
-    @Column(name = "formadePagamento")
-    private String formadePagamento;
-
+    @Column(name = "password")
+    private String password;
 }
